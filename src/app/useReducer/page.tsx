@@ -1,6 +1,7 @@
 "use client";
 
 import { useReducer } from "react";
+import ReducerComponent from "@/components/useReducer/reducer-component";
 
 // reducer dunction specifies that how state gets updated
 function reducer(state: any, action: any) {
@@ -28,6 +29,10 @@ export default function useReducerFunction() {
       </button>
 
       <h1>Hello ! You&apos;re {state.age}</h1>
+
+      <div>
+        <ReducerComponent />
+      </div>
     </div>
   );
 }
