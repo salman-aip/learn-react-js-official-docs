@@ -1,7 +1,9 @@
 "use client";
 
 import { useReducer } from "react";
+
 import ReducerComponent from "@/components/useReducer/reducer-component";
+import UseReducerTodos from "@/components/useReducer/reducer-todo-list-component";
 
 // reducer dunction specifies that how state gets updated
 function reducer(state: any, action: any) {
@@ -33,6 +35,9 @@ export default function useReducerFunction() {
       <div>
         <ReducerComponent />
       </div>
+
+      {/* todo list */}
+      <UseReducerTodos />
     </div>
   );
 }
